@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // import vision from '../../assets/images/vision.jpg';
 
-export const VisionAndMission = () => {
+const VisionAndMission = () => {
   return (
     <Wrapper>
       <Container>
