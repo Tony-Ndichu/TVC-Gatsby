@@ -75,7 +75,7 @@ const Header = props => {
 
             <MenuItems id="menus">
               <Link
-                to="/home"
+                to="/"
                 style={{
                   textDecoration: 'none',
                   color: 'white',

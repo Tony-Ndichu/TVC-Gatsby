@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import CoursesOfferedAndAdmissions from '../components/CoursesOfferedAndAdmissions';
-import CourseTable from '../components/CourseTable';
-import ShortCourses from '../components/ShortCourses';
+import Header from '../components/header';
+import CoursesOfferedAndAdmissions from '../components/coursesOfferedAndAdmissions';
+import CourseTable from '../components/courseTable';
+import ShortCourses from '../components/shortCourses';
 
 export default function Academics(){
   useEffect(() => {
