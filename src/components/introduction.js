@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 // import bg from '../../assets/images/bg.jpg';
+import bg from './assets/images/bg.jpg';
 // import uni from '../../assets/images/uni.jpg';
 
 export const Introduction = () => {
@@ -58,6 +59,7 @@ const Wrapper = styled.div`
 
   @media only screen and (min-width: 960px) {
     flex-direction: row-reverse;
+    background-image: url(${bg});
   }
 `;
 
