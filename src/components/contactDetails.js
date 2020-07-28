@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import contact from '../../assets/images/contact.jpg';
-import MapContainerMobile from './MapContainerMobile';
-import MapContainerDesktop from './MapContainerDesktop';
+import MapContainerMobile from './mapContainerMobile';
+import MapContainerDesktop from './mapContainerDesktop';
 // import contactus from '../../assets/images/contactus.jpg';
 import '../utils/fontawesome'
 
