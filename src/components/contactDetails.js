@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import contact from '../../assets/images/contact.jpg';
+import contact from './assets/images/contact.jpg';
+import contactus from './assets/images/contactus.jpg';
 import MapContainerMobile from './mapContainerMobile';
 import MapContainerDesktop from './mapContainerDesktop';
 // import contactus from '../../assets/images/contactus.jpg';
@@ -99,6 +100,7 @@ const Container2 = styled.div`
 
 const FeaturedImage = styled.div`
   display: block;
+  background-image: url(${contactus});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,6 +180,7 @@ const Map = styled.div`
 
 const Container = styled.div`
   padding: 10%;
+  background-image: url(${contact});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
