@@ -92,7 +92,7 @@ const Header = props => {
               </Link>
 
               <Link
-                to="/contact"
+                to="/contacts"
                 style={{
                   textDecoration: 'none',
                   color: 'white',
