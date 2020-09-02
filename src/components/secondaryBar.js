@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import '../utils/fontawesome'
+import { Link } from "gatsby";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,33 +36,74 @@ const SecondaryBar = props => {
     <div className={classes.root}>
       <AppBar position="static" className={classes.secondaryBar}>
         <Wrapper className="no-bullets">
+        <Link
+                to="/"
+                style={{
+                  textDecoration: 'none',
+                  color: '#0c2340',
+                  cursor: 'pointer',
+                  display: 'flex',
+                }}
+              >
           <Item>
             <Icon>
               <FontAwesomeIcon icon={"home"} />
             </Icon>
             <Description>Home</Description>
           </Item>
+          </Link>
 
+          <Link
+                to="/academics"
+                style={{
+                  textDecoration: 'none',
+                  color: '#0c2340',
+                  cursor: 'pointer',
+                  display: 'flex',
+                }}
+              >
           <Item>
             <Icon>
               <FontAwesomeIcon icon={"book"} />
             </Icon>
             <Description>Academics</Description>
           </Item>
+          </Link>
 
+          <Link
+                to="/contacts"
+                style={{
+                  textDecoration: 'none',
+                  color: '#0c2340',
+                  cursor: 'pointer',
+                  display: 'flex',
+                }}
+              >
           <Item>
             <Icon>
               <FontAwesomeIcon icon={"envelope"} />
             </Icon>
             <Description>Contacts</Description>
           </Item>
+          </Link>
 
+
+          <Link
+                to="/media"
+                style={{
+                  textDecoration: 'none',
+                  color: '#0c2340',
+                  cursor: 'pointer',
+                  display: 'flex',
+                }}
+              >
           <Item>
             <Icon>
               <FontAwesomeIcon icon={"images"} />
             </Icon>
             <Description>Media</Description>
           </Item>
+          </Link>
         </Wrapper>
       </AppBar>
     </div>
@@ -71,7 +113,7 @@ const SecondaryBar = props => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
 
 `;
 
