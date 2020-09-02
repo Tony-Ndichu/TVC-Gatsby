@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-// import courses from '../../assets/images/courses.jpg';
-// import computer from '../../assets/images/computer.png';
+import courses from '../images/courses.jpg';
+import computer from '../images/computer.png';
 
 const CoursesOfferedAndAdmissions = () => {
   return (
@@ -119,7 +119,7 @@ const FeaturedImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
-
+  background-image: url(${courses});
   width: 100%;
   height: 100%;
   position: absolute;
@@ -136,7 +136,7 @@ const FeaturedImageTwo = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
-
+  background-image: url(${computer});
   width: 100%;
   height: 100%;
   position: absolute;
