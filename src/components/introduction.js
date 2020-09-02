@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // import bg from '../../assets/images/bg.jpg';
 import bg from './assets/images/bg.jpg';
-// import uni from '../../assets/images/uni.jpg';
+import uni from '../images/img1.jpg';
 
 export const Introduction = () => {
   return (
@@ -88,7 +88,7 @@ const FeaturedImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
-
+  background-image: url(${uni});
   width: 100%;
   height: 100%;
   position: absolute;
@@ -135,7 +135,7 @@ const Text = styled.div`
   padding: 10%;
 
   @media only screen and (min-width: 960px) {
-    width: 30%;
+    width: 45%;
     margin-top: 0;
   }
 `;

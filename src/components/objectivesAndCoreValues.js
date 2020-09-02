@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-// import objectives from '../../assets/images/objectives.jpg';
-// import values from '../../assets/images/values.jpg';
+import objectives from '../images/img3.jpg';
+import values from '../images/img4.jpg';
 
 const ObjectivesAndCoreValues = () => {
   return (
@@ -124,7 +124,7 @@ const FeaturedImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
-
+  background-image: url(${objectives});
   width: 100%;
   height: 100%;
   position: absolute;
@@ -141,7 +141,7 @@ const FeaturedImageTwo = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
-
+  background-image: url(${values});
   width: 100%;
   height: 100%;
   position: absolute;

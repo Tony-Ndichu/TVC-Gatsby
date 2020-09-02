@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import vision from '../../assets/images/vision.jpg';
+import vision from '../images/img2.jpg';
 
 const VisionAndMission = () => {
   return (
@@ -61,6 +61,7 @@ const Image = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url(${vision});
 
   @media only screen and (min-width: 960px) {
     height: 400px;
