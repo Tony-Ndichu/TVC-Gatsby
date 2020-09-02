@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../components/assets/photos";
+import styled from 'styled-components';
 
 const ImageGallery = () => {
 
@@ -19,7 +20,7 @@ const ImageGallery = () => {
       };
       
      return (
-         <>
+         <Wrapper>
           <Gallery photos={photos} onClick={openLightbox} />
             <ModalGateway>
             {viewerIsOpen ? (
@@ -35,9 +36,15 @@ const ImageGallery = () => {
             </Modal>
             ) : null}
         </ModalGateway>
-      </>
+      </Wrapper>
       );
       
 }
+
+const Wrapper = styled.div`
+width: 800px;
+display: block;
+margin: 0 auto;
+`;
 
 export default ImageGallery;

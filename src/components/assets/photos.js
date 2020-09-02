@@ -15,34 +15,34 @@ export const photos = [
             height: 3
           },
           {
+            src: imageFive,
+            width: 3,
+            height: 2
+          },
+          {
+            src: imageSix,
+            width: 5,
+            height: 4
+          },
+          {
             src: imageTwo,
-            width: 1,
-            height: 1
+            width: 3,
+            height: 2
           },
           {
             src: imageThree,
-            width: 3,
+            width: 5,
             height: 4
           },
           {
             src: imageFour,
-            width: 3,
-            height: 4
-          },
-          {
-            src: imageFive,
-            width: 3,
-            height: 4
-          },
-          {
-            src: imageSix,
             width: 4,
             height: 3
           },
           {
             src: imageSeven,
             width: 3,
-            height: 4
+            height: 2
           },
           {
             src: imageEight,
