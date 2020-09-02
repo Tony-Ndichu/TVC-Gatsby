@@ -11,7 +11,7 @@ const videoPlayer = () => {
         <Title>Take A Tour</Title>
 
         <PlayerContainerDesktop id="desktop">
-            <ReactPlayer url={campusVideo} playing={false} controls={true} />
+            <ReactPlayer url={campusVideo}  width="800px" height="450px" playing={false} controls={true} />
         </PlayerContainerDesktop>
 
         <PlayerContainerMobile id="mobile">
@@ -80,7 +80,7 @@ const Wrapper = styled.div`
     @media only screen and (min-width: 960px) {
         padding-bottom: 5%;
         padding-top: 2%;
-        padding-left: calc(50% - 320px);
+        padding-left: calc(50% - 400px);
       }
 `;
 
