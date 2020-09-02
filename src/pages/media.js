@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from '../components/header';
+import VideoPlayer from '../components/videoPlayer';
 
 export default function Media(){
   useEffect(() => {
@@ -9,6 +10,7 @@ export default function Media(){
   return (
     <>
       <Header />
+      <VideoPlayer />
     </>
   );
 };
