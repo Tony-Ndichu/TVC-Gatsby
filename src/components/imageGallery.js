@@ -20,7 +20,10 @@ const ImageGallery = () => {
       };
       
      return (
-         <Wrapper>
+        <Wrapper>
+         <Container>
+            <SmallTitle>Gallery</SmallTitle>
+            <TitleSpecial>Click on any image to zoom</TitleSpecial>
           <Gallery photos={photos} onClick={openLightbox} />
             <ModalGateway>
             {viewerIsOpen ? (
@@ -36,15 +39,63 @@ const ImageGallery = () => {
             </Modal>
             ) : null}
         </ModalGateway>
+      </Container>
       </Wrapper>
       );
       
 }
 
 const Wrapper = styled.div`
-width: 800px;
+background-color: #0c2340;
+padding: 5%;
+padding-top: 20%;
+
+@media only screen and (min-width: 960px) {
+    padding: 5%;
+}
+`;
+
+const Container = styled.div`
 display: block;
 margin: 0 auto;
+width: 320px;
+
+@media only screen and (min-width: 960px) {
+  width: 800px;
+}
 `;
+
+const SmallTitle = styled.div`
+  font-family: 'Oswald', sans-serif;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #d2d2d2;
+`;
+
+const TitleSpecial = styled.div`
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #fff;
+  margin-top: 3%;
+  margin-bottom: 20%;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 0.75rem 0 1.875rem 0;
+    background: #ae9142;
+  }
+
+  @media only screen and (min-width: 960px) {
+    margin-top: 2%;
+    margin-bottom: 0%;
+  }
+`;
+
 
 export default ImageGallery;

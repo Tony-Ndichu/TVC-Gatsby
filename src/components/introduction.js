@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // import bg from '../../assets/images/bg.jpg';
 import bg from './assets/images/bg.jpg';
-import uni from '../images/img1.jpg';
+import uni from './assets/carousel-images/img1.jpg';
 
 export const Introduction = () => {
   return (

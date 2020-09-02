@@ -9,10 +9,36 @@ const videoPlayer = () => {
         <Wrapper>
         <SmallTitle> See our campus</SmallTitle>
         <Title>Take A Tour</Title>
-            <ReactPlayer width="100%" url={campusVideo} playing={false} controls={true} />
+
+        <PlayerContainerDesktop id="desktop">
+            <ReactPlayer url={campusVideo} playing={false} controls={true} />
+        </PlayerContainerDesktop>
+
+        <PlayerContainerMobile id="mobile">
+            <ReactPlayer url={campusVideo} width="320px" height="180px" playing={false} controls={true} />
+        </PlayerContainerMobile>
         </Wrapper>
     );
 }
+
+
+const PlayerContainerDesktop = styled.div`
+display: block;
+margin: 0 auto; 
+
+  @media only screen and (max-width: 960px) {
+    display: none;
+  }
+`;
+
+const PlayerContainerMobile = styled.div`
+display: block;
+margin: 0 auto; 
+
+@media only screen and (min-width: 960px) {
+    display: none;
+  }
+`;
 
 const SmallTitle = styled.div`
   font-family: 'Oswald', sans-serif;
@@ -28,6 +54,7 @@ const Title = styled.div`
   line-height: 1.2em;
   color: #0c2340;
   margin-top: 0;
+  margin-bottom: 20%;
 
   &:after {
     content: '';
@@ -37,13 +64,24 @@ const Title = styled.div`
     margin: 0.75rem 0 1.875rem 0;
     background: #ae9142;
   }
+
+  @media only screen and (min-width: 960px) {
+    margin-bottom: 0%;
+  }
 `;
 
 const Wrapper = styled.div`
-    display: block;
-    margin: 0 auto;
-    margin-top: 2%;
+    padding-top: 10%;
     background-image: url(${bg});
+    width: 100%;
+    padding-bottom: 15%;
+    padding-left: calc(50% - 160px);
+
+    @media only screen and (min-width: 960px) {
+        padding-bottom: 5%;
+        padding-top: 2%;
+        padding-left: calc(50% - 320px);
+      }
 `;
 
 export default videoPlayer;
