@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import courses from '../images/courses.jpg';
-import computer from '../images/computer.png';
+import courses from '../images/bg5.jpg';
+import computer from '../images/bg6.png';
 
 const CoursesOfferedAndAdmissions = () => {
   return (
