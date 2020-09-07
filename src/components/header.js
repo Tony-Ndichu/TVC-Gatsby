@@ -7,7 +7,7 @@ import Slide from '@material-ui/core/Slide';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Sticky from 'react-sticky-el';
 import { Link } from "gatsby";
-import ShieldLogo from './assets/images/shield.svg';
+import ShieldLogo from './assets/images/gatsby-icon.png';
 import SecondaryBar from './SecondaryBar';
 
 const useStyles = makeStyles(theme => ({
@@ -156,7 +156,7 @@ const Item = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 70px;
+  width: 160px;
 `;
 
 const Title = styled.div`
