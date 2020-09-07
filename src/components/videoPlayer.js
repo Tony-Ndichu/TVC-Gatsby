@@ -1,22 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import campusVideo from './assets/carousel-images/campus-video.mp4';
 import styled from 'styled-components';
 import bg from './assets/images/bg.jpg';
 
-const videoPlayer = () => {
+const VideoPlayer = () => {
+  const [isDesktopView, setDesktopView] = useState(true);
+
+  const handleResize = () => {
+    if (window.innerWidth > 992) {
+      setDesktopView(true);
+    } else {
+      setDesktopView(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
     return (
         <Wrapper>
         <SmallTitle> See our campus</SmallTitle>
         <Title>Take A Tour</Title>
 
+        { isDesktopView &&
         <PlayerContainerDesktop id="desktop">
-            <ReactPlayer url={campusVideo}  width="800px" height="450px" playing={false} controls={true} />
+            <ReactPlayer url={campusVideo} width="800px" height="450px" playing={true} controls={true} />
         </PlayerContainerDesktop>
+}
 
-        <PlayerContainerMobile id="mobile">
-            <ReactPlayer url={campusVideo} width="320px" height="180px" playing={false} controls={true} />
-        </PlayerContainerMobile>
+        { !isDesktopView &&
+        (<PlayerContainerMobile id="mobile">
+            <ReactPlayer url={campusVideo} width="320px" height="180px" playing={true} controls={true} />
+        </PlayerContainerMobile>) }
         </Wrapper>
     );
 }
@@ -26,18 +47,12 @@ const PlayerContainerDesktop = styled.div`
 display: block;
 margin: 0 auto; 
 
-  @media only screen and (max-width: 960px) {
-    display: none;
-  }
 `;
 
 const PlayerContainerMobile = styled.div`
 display: block;
 margin: 0 auto; 
 
-@media only screen and (min-width: 960px) {
-    display: none;
-  }
 `;
 
 const SmallTitle = styled.div`
@@ -84,4 +99,4 @@ const Wrapper = styled.div`
       }
 `;
 
-export default videoPlayer;
+export default VideoPlayer;
