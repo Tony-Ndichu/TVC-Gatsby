@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import objectives from '../images/img3.jpg';
-import values from '../images/img4.jpg';
+import objectives from './assets/carousel-images/img3.jpg';
+import values from './assets/carousel-images/img4.jpg';
 
 const ObjectivesAndCoreValues = () => {
   return (

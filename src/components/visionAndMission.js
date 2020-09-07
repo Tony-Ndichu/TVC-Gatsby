@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import vision from '../images/img2.jpg';
+import vision from './assets/carousel-images/img2.jpg';
 
 const VisionAndMission = () => {
   return (

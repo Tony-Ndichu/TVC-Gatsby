@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import campusVideo from '../images/campus-video.mp4';
+import campusVideo from './assets/carousel-images/campus-video.mp4';
 import styled from 'styled-components';
 import bg from './assets/images/bg.jpg';
 
