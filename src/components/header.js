@@ -8,7 +8,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Sticky from 'react-sticky-el';
 import { Link } from "gatsby";
 import ShieldLogo from './assets/images/gatsby-icon.png';
-import SecondaryBar from './SecondaryBar';
+import SecondaryBar from './secondaryBar';
 
 const useStyles = makeStyles(theme => ({
   root: {
