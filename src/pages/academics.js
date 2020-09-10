@@ -4,6 +4,7 @@ import Header from '../components/header';
 import CoursesOfferedAndAdmissions from '../components/coursesOfferedAndAdmissions';
 import CourseTable from '../components/courseTable';
 import ShortCourses from '../components/shortCourses';
+import { Helmet } from "react-helmet";
 
 export default function Academics(){
   useEffect(() => {
@@ -12,6 +13,11 @@ export default function Academics(){
 
   return (
     <>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Academics</title>
+          <meta name="Academics" content="We offer courses including Artisan and Short Courses (Brochure Details), Certificate courses, Diploma courses, Short/Artisan Courses, Electrical and Electronic Engineering etc." />
+        </Helmet >
       <Header />
       <CoursesOfferedAndAdmissions />
 
