@@ -24,5 +24,5 @@ export class MapContainerDesktop extends PureComponent {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyCINZPSEF612A-SyzrcVgCa57LU4nz3vHY'
+  apiKey: 'AIzaSyBhX69BgUxjoXGusAXNHXA4nR0qvC_gNgY'
 })(MapContainerDesktop);
